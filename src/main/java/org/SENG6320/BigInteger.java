@@ -341,7 +341,7 @@ public class BigInteger extends Number implements Comparable<BigInteger>
         return top < 0 ? -1 : 1;
     }
 
-    private static int compareTo(BigInteger x, BigInteger y)
+    public static int compareTo(BigInteger x, BigInteger y)
     {
         if (x.words == null && y.words == null)
         {
