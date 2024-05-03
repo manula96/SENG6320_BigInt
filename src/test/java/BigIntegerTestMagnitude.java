@@ -14,7 +14,6 @@ public class BigIntegerTestMagnitude {
         BigInteger expected = new BigInteger("9876543210");
         assertEquals(expected, new BigInteger(signum, magnitude));
 
-
     }
 
     @Test

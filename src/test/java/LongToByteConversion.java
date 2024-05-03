@@ -1,9 +1,10 @@
-import java.math.BigInteger;
+import org.SENG6320.BigInteger;
 
 public class LongToByteConversion {
     static byte[] decimalToBigEndianBinary(String decimal) {
         BigInteger bigInteger = new BigInteger(decimal);
         byte[] magnitude = bigInteger.toByteArray();
+
         // If the most significant bit is set, add an extra byte with 0x00 as padding
         if ((magnitude[0] & 0x80) != 0) {
             byte[] paddedMagnitude = new byte[magnitude.length + 1];
@@ -20,3 +21,5 @@ public class LongToByteConversion {
         return magnitude;
     }
 }
+
+
