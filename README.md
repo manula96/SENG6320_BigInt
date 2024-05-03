@@ -44,6 +44,12 @@ This repository contains the code and documentation for Assignment 1 of the SENG
 To get started with the project, follow these steps:
 
 1. Clone this repository to your local machine:
-2. Navigate to the project directory
-3. java -cp "test/*:src" org.junit.platform.console.ConsoleLauncher --scan-classpath
+2. Navigate to the project directory using the terminal (/SENG6320)
+3. Run command "mvn test" to execute all JUnit test cases in the src/test folder
+4. Please note that you need Maven installed in your machine to accomplish this.
 
+IF NOT
+
+1. Clone this repository to your local machine
+2. Open the project in and idea (eg: Intellij)
+3. Run the java test files in the directory src/test/java
